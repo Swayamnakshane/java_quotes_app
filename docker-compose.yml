@@ -1,0 +1,7 @@
+version: "3.9"
+services:
+  motivational:
+    image: motivational-quotes-api:latest
+    container_name: "motivation"
+    ports:
+      - "8000:8000"
