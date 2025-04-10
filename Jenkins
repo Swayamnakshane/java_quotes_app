@@ -1,8 +1,8 @@
-pipeline {
+pipeline{
     agent {label "dev"}
     stages{
         stage("code"){
-            steps {
+            steps{
                 git url: "https://github.com/Swayamnakshane/java_quotes_app.git", branch: "master"
             }
         }
