@@ -1,7 +1,7 @@
 
 services:
   motivational:
-    image: demoapp:latest
+    image: myapp:latest
     container_name: "motivation"
     ports:
       - "8000:8000"
