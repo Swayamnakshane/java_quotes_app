@@ -13,7 +13,7 @@ pipeline{
         }
         stage("deploy"){
             steps{
-                sh"docker run -d --name app3 -p 8000:8000 jenkinsapp:latest"
+                sh"docker run -d --name app5 -p 8000:8000 jenkinsapp:latest"
             }
         }
     }
