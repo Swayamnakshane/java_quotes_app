@@ -8,12 +8,12 @@ pipeline{
         }
         stage("build"){
             steps{
-                sh "docker build -t myapp ."
+                sh "docker build -t jenkinapp ."
             }
         }
         stage("deploy"){
             steps{
-                sh "docker run -d --name app -p 8000:8000 myapp:latest "
+                sh "docker run -d --name app -p 8000:8000 jenkinapp:latest "
             }
         }
     }
